@@ -9,6 +9,9 @@ Esse é um pequeno projeto de um aplicativo de gerenciamento de despesas pessoai
 
 Novas funcionalidades serão implementadas em breve...
 
+Página Principal do Aplicativo
+![Home Page](assets/images/scs_01.png)
+
 --------------------------------------------
 
 # Expenses (personal expenses app)
