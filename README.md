@@ -9,7 +9,7 @@ Esse é um pequeno projeto de um aplicativo de gerenciamento de despesas pessoai
 
 -   Novas funcionalidades serão implementadas em breve...
 
-*   Página Principal do Aplicativo
+*   Página Principal do Aplicativo:
 --------------------------------------------
 ![Home Page](assets/images/scs_01.png)
 
@@ -26,7 +26,13 @@ This is a small project for a personal expense management application in the Flu
 
 New features will be implemented soon...
 
-### Getting Started
+### Autor
+
+Developer: Bismarck Alencar Reis (BisdCode)
+[Linkedin](https://www.linkedin.com/in/bismarck-alencar-reis-31b6ab19b/)
+[Github](https://github.com/Bisdcode)
+
+#### Getting Started
 
 This project is a starting point for a Flutter application.
 
