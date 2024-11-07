@@ -7,9 +7,9 @@ Esse é um pequeno projeto de um aplicativo de gerenciamento de despesas pessoai
 -   Adicionar despesas com descrição, valor e data.
 -   Gráfico distribuindo as despesas dos ultimos 7 dias e suas respectivas proporcionalides na despesa geral.
 
-Novas funcionalidades serão implementadas em breve...
+-   Novas funcionalidades serão implementadas em breve...
 
-Página Principal do Aplicativo
+*   Página Principal do Aplicativo
 ![Home Page](assets/images/scs_01.png)
 
 --------------------------------------------
