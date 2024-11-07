@@ -23,15 +23,6 @@ class ExpensesApp extends StatelessWidget {
           backgroundColor: Colors.amber,
         ),
 
-        // theme: ThemeData(
-        //   //Codigo para permitir usar tecnicas de tema antigos
-        //   useMaterial3: false,
-        //   fontFamily: 'Quicksand',
-        //   colorScheme: ColorScheme.fromSeed(
-        //     seedColor: Colors.purple,
-        //     secondary: Colors.amber,
-        //   ),
-
         //Estilo das fontes
         textTheme: TextTheme(
           titleLarge: TextStyle(
@@ -42,6 +33,7 @@ class ExpensesApp extends StatelessWidget {
           ),
           titleMedium: TextStyle(
             fontFamily: 'OpenSans',
+            fontWeight: FontWeight.bold,
             color: Colors.black,
           ),
           titleSmall: TextStyle(

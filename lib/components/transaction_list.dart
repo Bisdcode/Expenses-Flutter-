@@ -39,48 +39,39 @@ class TransactionList extends StatelessWidget {
               //itemBuilder vai construir conforme a necessidade
               itemBuilder: (ctx, index) {
                 final tr = transactions[index];
-                return ListTile(
-                  //Alternativa ao 'Card'
-                  leading: CircleAvatar(
-                    //O valor fica num formato de Circulo
-                    radius: 30,
-                    child: Padding(
-                      // Para o texto não ficar muito próximo da borda
-                      padding: const EdgeInsets.all(6.0),
-                      child: FittedBox(
-                        //Widget para ajustar melhor o texto
-                        child: Text('R\$${tr.value}'),
+                return Card(
+                  elevation: 5,
+                  margin: EdgeInsets.symmetric(
+                    vertical: 8,
+                    horizontal: 5,
+                  ),
+                  child: ListTile(
+                    //Alternativa ao 'Card'
+                    leading: CircleAvatar(
+                      backgroundColor: Theme.of(context).colorScheme.primary,
+                      //O valor fica num formato de Circulo
+                      radius: 30,
+                      child: Padding(
+                        // Para o texto não ficar muito próximo da borda
+                        padding: const EdgeInsets.all(6.0),
+                        child: FittedBox(
+                          //Widget para ajustar melhor o texto
+                          child: Text(
+                            'R\$${tr.value}',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
                       ),
                     ),
+                    title: Text(
+                      tr.title,
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    subtitle: Text(
+                      DateFormat('d MMM y').format(tr.date),
+                    ),
                   ),
-                  title: Text(tr.title),
                 );
-
-                // Card(
-                //   elevation: 5,
-                //   margin: EdgeInsets.symmetric(
-                //     vertical: 8,
-                //     horizontal: 5,
-                //   ),
-                //   child: ListTile(
-                //     leading: CircleAvatar(
-                //       backgroundColor: Theme.of(context).colorScheme.primary,
-                //       foregroundColor: Colors.white,
-                //       radius: 30,
-                //       child: Padding(
-                //         padding: const EdgeInsets.all(6.0),
-                //         child: FittedBox(
-                //           child: Text('R\$${tr.value}'),
-                //         ),
-                //       ),
-                //     ),
-                //     title: Text(
-                //       tr.title,
-                //       style: Theme.of(context).textTheme.titleLarge,
-                //     ),
-                //     subtitle: Text(DateFormat("d MMM y").format(tr.date)),
-                //   ),
-                // );
               },
               //Aqui será feito um map da lista de transações, e depois será convertido em elementos visuais
               //E também o formulário de inserir nova transação
